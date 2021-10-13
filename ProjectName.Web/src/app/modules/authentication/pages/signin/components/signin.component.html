@@ -1,0 +1,23 @@
+<div class="left-part">
+  <span class="login-panel-header">Sign in</span>
+  <span class="login-panel-subheader">Welcome, please use the form to sign-in Harmony network</span>
+
+  <form [formGroup]="loginForm">
+    <div style="margin-top:32px;padding:0px !important">
+      <div class="ui-g-12">
+        <label>Enter e-mail address</label>
+        <input type="text" autocomplete="off" formControlName="email" class="ui-inputtext ui-widget" />
+      </div>
+      <div class="ui-g-12">
+        <label>Enter password</label>
+        <input type="password" autocomplete="off" formControlName="password" class="ui-inputtext ui-widget" feedback="false" />
+      </div>
+    </div>
+    <div class="ui-g-6">
+      <button type="button" (click)="onSubmit()" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only blue-btn ui-button-raised">
+        Login
+      </button>
+    </div>
+  </form>
+</div>
+
